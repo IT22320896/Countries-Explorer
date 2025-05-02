@@ -23,9 +23,18 @@ const app = express();
 // Body parser
 app.use(express.json());
 
+const allowedOrigins = [
+  "https://countries-explorer-lyart.vercel.app",
+  "http://localhost:3000",
+];
+
 // Security middleware
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin: allowedOrigins,
+  })
+);
 app.use(rateLimiter);
 
 // Dev logging middleware

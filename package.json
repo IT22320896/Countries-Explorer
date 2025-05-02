@@ -1,0 +1,26 @@
+{
+  "name": "countries-explorer",
+  "version": "1.0.0",
+  "description": "A full-stack application that integrates with the REST Countries API",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "countries",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

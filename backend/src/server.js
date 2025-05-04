@@ -26,6 +26,7 @@ app.use(express.json());
 const allowedOrigins = [
   "https://countries-explorer-lyart.vercel.app",
   "http://localhost:3000",
+  "http://localhost:5173",
 ];
 
 // Security middleware

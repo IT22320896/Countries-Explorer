@@ -167,9 +167,16 @@ const Homepage = ({ showFavorites = false }) => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">
-        {showFavorites ? "Your Favorite Countries" : "Explore Countries"}
-      </h1>
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-3xl font-bold">
+          {showFavorites ? "Your Favorite Countries" : "Explore Countries"}
+        </h1>
+        <div className="bg-blue-100 dark:bg-gray-700 rounded-lg px-4 py-2">
+          <span className="font-medium text-blue-800 dark:text-blue-300">
+            {filteredCountries.length} {filteredCountries.length === 1 ? "country" : "countries"} found
+          </span>
+        </div>
+      </div>
 
       {!showFavorites && (
         <SearchFilter

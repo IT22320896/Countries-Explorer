@@ -85,8 +85,7 @@ The application integrates with the [REST Countries API](https://restcountries.c
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/countries-explorer.git
-   cd countries-explorer
+   git clone https://github.com/SE1020-IT2070-OOP-DSA-25/af-2-IT22320896.git
    ```
 
 2. Set up the backend:
@@ -148,5 +147,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Your Name - your.email@example.com
-Project Link: https://github.com/yourusername/countries-explorer
+Mohamed Mufeez - mufeez45@gmail.com
+
+Project Link: https://github.com/SE1020-IT2070-OOP-DSA-25/af-2-IT22320896.git
